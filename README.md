@@ -4,7 +4,7 @@ An institutional-grade Quantitative Research and Algorithmic Trading Platform.
 
 ## Overview
 
-QuantLab is a professional-level research platform built to mirror the internal tools used at quantitative trading firms. It combines high-performance C++20 components with Python research notebooks, covering the full lifecycle from market data ingestion to live paper trading.
+QuantLab is a professional-level research platform built by Lucius to mirror the internal tools used at quantitative trading firms. It combines high-performance C++20 components with Python research notebooks, covering the full lifecycle from market data ingestion to live paper trading.
 
 ## Architecture
 
