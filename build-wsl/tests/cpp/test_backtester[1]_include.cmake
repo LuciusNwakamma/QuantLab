@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_backtester[1]_tests.cmake")
-  include("/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_backtester[1]_tests.cmake")
-else()
-  add_test(test_backtester_NOT_BUILT test_backtester_NOT_BUILT)
-endif()

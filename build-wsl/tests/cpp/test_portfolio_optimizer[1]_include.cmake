@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_portfolio_optimizer[1]_tests.cmake")
-  include("/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_portfolio_optimizer[1]_tests.cmake")
-else()
-  add_test(test_portfolio_optimizer_NOT_BUILT test_portfolio_optimizer_NOT_BUILT)
-endif()

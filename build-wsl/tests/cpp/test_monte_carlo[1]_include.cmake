@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_monte_carlo[1]_tests.cmake")
-  include("/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_monte_carlo[1]_tests.cmake")
-else()
-  add_test(test_monte_carlo_NOT_BUILT test_monte_carlo_NOT_BUILT)
-endif()

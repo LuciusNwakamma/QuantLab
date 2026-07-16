@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_risk_engine[1]_tests.cmake")
-  include("/mnt/c/Users/Lucius Nwakamma/QuantLab/build-wsl/tests/cpp/test_risk_engine[1]_tests.cmake")
-else()
-  add_test(test_risk_engine_NOT_BUILT test_risk_engine_NOT_BUILT)
-endif()

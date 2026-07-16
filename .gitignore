@@ -1,5 +1,6 @@
 # Build artifacts
 build/
+build-wsl/
 cmake-build-*/
 *.o
 *.a
@@ -45,6 +46,8 @@ htmlcov/
 # Data files (large)
 data/raw/
 data/cache/
+research/reports/*
+!research/reports/.gitkeep
 *.parquet
 *.feather
 *.h5
