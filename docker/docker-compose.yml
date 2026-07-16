@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  # C++ build & test runner
+  cpp-tests:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: cpp-builder
+    command: ["cmake", "--build", "build", "--target", "test"]
+    volumes:
+      - ../:/app
+
+  # Python research environment
+  research:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: python-research
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../research:/app/research
+      - ../python:/app/python
+    environment:
+      - ALPACA_API_KEY=${ALPACA_API_KEY}
+      - ALPACA_SECRET_KEY=${ALPACA_SECRET_KEY}
+      - POLYGON_API_KEY=${POLYGON_API_KEY}
+
+  # PostgreSQL (optional)
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: quantlab
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: quantlab
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

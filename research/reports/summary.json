@@ -1,0 +1,38 @@
+{
+  "config": {
+    "provider": "yfinance",
+    "symbols": [
+      "MSFT"
+    ],
+    "start": "2020-01-01",
+    "end": "2024-12-31",
+    "resolution": "1d",
+    "strategy": "momentum",
+    "warmup_bars": 80,
+    "max_leverage": 1.0,
+    "transaction_cost_bps": 1.0,
+    "output_dir": "research/reports"
+  },
+  "provider": "YFinance",
+  "strategy": "momentum",
+  "num_bars": {
+    "MSFT": 1257
+  },
+  "metrics": {
+    "total_return": -0.5815663453691702,
+    "annualized_return": -0.17030210675602353,
+    "annualized_volatility": 0.23796310124869763,
+    "sharpe_ratio": -0.854328221978048,
+    "sortino_ratio": -1.2502714771469625,
+    "calmar_ratio": -0.2706963512243301,
+    "max_drawdown": -0.6291259781883489,
+    "max_drawdown_duration": 962,
+    "win_rate": 0.4030612244897959,
+    "profit_factor": 0.6406786920670415,
+    "information_ratio": 0.0,
+    "alpha": 0.0,
+    "beta": 1.0,
+    "total_trades": 1176,
+    "avg_trade_return": -0.0006281690205800876
+  }
+}
